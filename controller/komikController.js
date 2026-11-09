@@ -75,5 +75,5 @@ module.exports = {
     getKomikById,
     createKomik,
     updateKomik,
-    deleteKomik,
+    deleteKomik
 }
