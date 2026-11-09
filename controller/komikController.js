@@ -26,5 +26,8 @@ async function getKomikById(req, res) {
 
 async function createKomik(req, res) {
     const { title, description, author } = req.body;
-    try {}
+    try {
+        const newKomik = await db.Komik.create({ title, description, author });
+        res.status(201).json(newKomik);
+    }
 }
