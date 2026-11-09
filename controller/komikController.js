@@ -9,3 +9,7 @@ async function getAllKomik(req, res) {
         res.status(500).json({ error: 'An error occurred while retrieving komik.' });
     }
 }
+
+async function getKomikById(req, res) {
+    const { id } = req.params;
+}
