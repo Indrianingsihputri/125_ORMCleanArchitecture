@@ -12,3 +12,5 @@ async function connectDatabase() {
         process.exit(1); // Exit the process with an error code
     }
 }
+
+module.exports = connectDatabase;
