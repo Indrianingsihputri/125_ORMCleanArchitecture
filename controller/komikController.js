@@ -49,5 +49,8 @@ async function updateKomik(req, res) {
         komik.author = author;
         await komik.save();
         res.status(200).json(komik);
+    } catch (error) {
+        console.error('Error updating komik:', error.message);
+        res.status(500).json({ error: 'An error occurred while updating komik.' });
     }
 }
