@@ -54,3 +54,10 @@ async function updateKomik(req, res) {
         res.status(500).json({ error: 'An error occurred while updating komik.' });
     }
 }
+
+async function deleteKomik(req, res) {
+    const { id } = req.params;
+    try {
+        const komik = await db.Komik.findByPk(id);
+    }
+}
